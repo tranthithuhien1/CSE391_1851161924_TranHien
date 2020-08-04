@@ -8,80 +8,127 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="JS/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://kit.fontawesome.com/1e9d4d2468.js" crossorigin="anonymous"></script>
   </head>
   <body>
       <header class="header">
           <div class="container">
-            <div class="left">
+            <div class="row">
+            <div class="row-left">
               <div class="logo">
                 <img src="images/logo (1).png" alt="">
                 <img src="images/slg.png" alt="">
               </div>
             </div>
+            <div class="row-right">
             <div class="search">
               <div class="language">
+                  <a href="#">(+)</a>
                   <a href="#">login</a>
                   <a href="#">Register</a>
                   <a href="#">Ngôn ngữ</a>
                   <a href="#"><img src="images/icon-lang-en.png" alt=""></a>
                   <a href="#"><img src="images/icon-lang-vi.png" alt=""></a>
               </div>
+              <hr>
             </div>
-            <div class="right">
               <div class="sreach-form">
                 <form action="#">
                    <input type="text" placeholder="Tìm Kiếm">
                    <input type="submit" value="Tìm">
                 </form>
               </div>
-              <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">TLU</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#"><i class ="fas fa-home maucuatoi"></i>TRANG CHỦ<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">GIỚI THIỆU </a>
-                         <ul class="menuc">
-                            <li class="item2"><a href="#">thư ngỏ</a></li>
-                            <li class="item2"><a href="#">cơ cấu tổ chức&nhân lực </a></li>
-                            <li class="item2"><a href="#">lịch sử hình thành</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">TIN TỨC-THÔNG BÁO</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">ĐÀO TẠO</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">BỘ MÔN-TRUNG TÂMTÂM</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">KHCN-HỢP TÁC</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">NGƯỜI HỌC</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">HỌC LIỆU</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#">LIÊN HỆ</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+            </div>
+  <menu>
+              <div class="inner">
+                  <nav>
+                      <ul class="menu">
+                          <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                          <li><a href="" class="nav-menu">TLU</a></li>
+                          <li><a href="" class="nav-menu">TRANG CHỦ</a></li>
+                          <li class="dropdown">
+                            <a href="" class="nav-menu">GIỚI THIỆU</a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Thư ngỏ </a></li>
+                                <li><a href="#">Cơ cấu tổ chức & nhân lực </a></li>
+                                <li><a href="#">Lịch sử hình thành </a></li>
+                            
+                            </ul>
+                        </li>
 
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">...</nav>
-          
-          <!-- Blue with white text -->
-          <nav class="navbar navbar-expand-sm bg-primary navbar-dark">...</nav>
-
+                          <li class="dropdown">
+                              <a href="" class="nav-menu">TIN TỨC & THÔNG BÁO</a>
+                              <ul class="dropdown-content">
+                                  <li><a href="#">Tin tức </a></li>
+                                  <li><a href="#">Thông báo </a></li>
+                              </ul>
+                          </li>
+                          <li class="dropdown">
+                              <a href="" class="nav-menu">ĐÀO TẠO </a>
+                              <ul class="dropdown-content">
+                                  <li><a href="#">Mô hình đào tạo </a></li>
+                                  <li><a href="#">Đại học chính quy </a></li>
+                                  <li><a href="#">Thạc sĩ </a></li>
+                                  <li><a href="#">Lớp học chuyên đề </a></li>
+                              </ul>
+                          </li>
+                          <li><a href="" class="nav-menu">LIÊN HỆ</a></li>
+                          <li class="dropdown">
+                              <a href="" class="nav-menu">BỘ MÔN-TRUNG TÂM </a>
+                              <ul class="dropdown-content">
+                                  <li><a href="#">BM Kế toán </a></li>
+                                  <li><a href="#">BM Kinh tế </a></li>
+                                  <li><a href="#">BM Phát triển kĩ năng </a></li>
+                                  <li><a href="#">BM Quản lí xây dựng </a></li>
+                                  <li><a href="#">BM Quản trị kinh doanh </a></li>
+                                  <li><a href="#">Trung tâm KT&QL </a></li>
+                                  <li><a href="#">Lý lịch khoa học </a></li>
+                              </ul>
+                          </li>
+                          <li class="dropdown">
+                              <a href="" class="nav-menu">KHCN-HỢP TÁC </a>
+                              <ul class="dropdown-content">
+                                  <li><a href="#">Khoa học công nghệghệ </a></li>
+                                  <li><a href="#">Siminar, Hội thảo, Hội nghị </a></li>
+                                  <li><a href="#">Hợp tác - Tuyển dụng </a></li>
+                                
+                              </ul>
+                          </li>
+                          <li class="dropdown">
+                              <a href="" class="nav-menu">NGƯỜI HỌC </a>
+                              <ul class="dropdown-content">
+                                  <li><a href="#">Cẩm nang người học </a></li>
+                                  <li><a href="#">Quy định-Biểu mẫu </a></li>
+                                  <li><a href="#">Hoạt động sinh viên </a></li>
+                                  <li><a href="#">Sinh viên tương lai </a></li>
+                                  <li><a href="#">Cựu sinh viên </a></li>
+                                  <li><a href="#">Hỗ trợ </a></li>
+                                
+                              </ul>    
+                          </li>
+                          <li class="dropdown">
+                              <a href="" class="nav-menu">HỌC LIỆU </a>
+                              <ul class="dropdown-content">
+                                  <li><a href="#">Bài giảng điện tử </a></li>
+                                  <li><a href="#">KLTN-DATN </a></li>
+                                  <li><a href="#">NCKH Sinh viên  </a></li>
+                                  <li><a href="#">Luận văn Thạc sĩ </a></li>
+                                  <li><a href="#">Bài báo khoa học </a></li>
+                                  <li><a href="#">Phần mềm và tài liệu hội thảo </a></li>
+    
+                              </ul>
+                          </li> 
+                          <li><a href="" class="nav-menu">LIÊN HỆ</a></li>
+                        </ul>
+                  </nav>
+                  </menu>
+            <div id="dnn_BannerPane"><div class="DnnModule DnnModule-CMSView DnnModule-474"><a name="474"></a><div id="dnn_ctr474_ContentPane"><!-- Start_Module_474 --><div id="dnn_ctr474_ModuleContent" class="DNNModuleContent ModCMSViewC">
+      <span id="dnn_ctr474_ViewCMSView_lblInform"></span>
+    
+     </section>
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -109,7 +156,89 @@
       
         </div>
     </header>  
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <span id="dnn_dnnCopyright_lblCopyright" class="SkinObject">&copy;  2020   - Khoa Kinh tế và Quản lý -  Đại học Thủy Lợi</span>
 
+        </div>
+      </div>
+
+      <div class="footer__bot">
+        <div class="container">
+				<div class="row dnnpane">
+					
+						<div id="dnn_Footer_50_1" class="col-md-6 spacingTop"><div class="DnnModule DnnModule-DNN_HTML DnnModule-432"><a name="432"></a>
+<div class="DNNContainer_noTitle">
+	<div id="dnn_ctr432_ContentPane"><!-- Start_Module_432 --><div id="dnn_ctr432_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr432_HtmlModule_lblContent" class="Normal">
+	<div class="box-bottom">
+<div class="mapguide"><a href="#"><img alt="Image" src="images/img-01.png" /></a>
+<p>Bản đồ chỉ dẫn trường đại học</p>
+</div>
+
+<div class="text-bot">
+<div class="text-copyright">Địa chỉ: P.206-207&nbsp;A5, Đại học Thủy lợi, 175 Tây Sơn, Đống Đa, Hà Nội<br />
+Điện thoại: (04) 3852.2028<br />
+Email: <a class="ui-link-white" href="#">KhoaK@tlu.edu.vn</a></div>
+<div>
+<script id="_wau9oo">var _wau = _wau || []; _wau.push(["dynamic", "vthlqzot3c", "9oo", "3c78d8ffffff", "small"]);</script><script async src="//waust.at/d.js"></script>
+</div>
+</div>
+</div>
+
+</div>
+
+</div><!-- End_Module_432 --></div>
+	<div class="clear"></div>
+</div>
+</div></div>
+						<div id="dnn_Footer_25_1" class="col-md-3 spacingTop"><div class="DnnModule DnnModule-CMSView DnnModule-867"><a name="867"></a><div id="dnn_ctr867_ContentPane"><!-- Start_Module_867 --><div id="dnn_ctr867_ModuleContent" class="DNNModuleContent ModCMSViewC">
+	<span id="dnn_ctr867_ViewCMSView_lblInform"></span>
+
+
+<table>
+	<tr>
+		<td>
+            <div style="color:#fff">Số người đang online : <span class="hit-count">41</span></div>
+		    
+            
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-left:20px"><div style="color:#fff">Lượt truy cập : <span class="hit-count">1106391</span></div></td>
+		
+	</tr>
+</table>
+
+
+
+</div><!-- End_Module_867 --></div>
+</div><div class="DnnModule DnnModule-DNN_HTML DnnModule-868"><a name="868"></a><div id="dnn_ctr868_ContentPane"><!-- Start_Module_868 --><div id="dnn_ctr868_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr868_HtmlModule_lblContent" class="Normal">
+		
+	</div>
+
+</div><!-- End_Module_868 --></div>
+</div></div>
+						<div id="dnn_Footer_25_2" class="col-md-3 spacingTop"><div class="DnnModule DnnModule-CMSView DnnModule-816"><a name="816"></a><div id="dnn_ctr816_ContentPane"><!-- Start_Module_816 --><div id="dnn_ctr816_ModuleContent" class="DNNModuleContent ModCMSViewC">
+	<span id="dnn_ctr816_ViewCMSView_lblInform"></span>
+
+<div id="fb-root"></div>
+
+ <div style="width: 285px;text-align:center">
+	<!-- Page plugin's width will be 500px -->
+  <div class="fb-page" data-href="https://www.facebook.com/khoaKTvaQLtruongDHTL/" data-width="285"></div>
+</div>
+
+</div><!-- End_Module_816 --></div>
+</div></div>
+					
+				</div>		
+          
+        </div>
+      </div>
+    </footer>
   </div>  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
